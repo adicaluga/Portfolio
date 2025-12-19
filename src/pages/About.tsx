@@ -14,18 +14,18 @@ const About = () => {
       <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
-            <div className="animate-fade-up mb-12 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
-              <Avatar className="h-32 w-32 border-2 border-primary/30 shadow-lg">
+            <div className="animate-fade-up mb-8 flex justify-center">
+              <Avatar className="h-40 w-40 border-4 border-primary/30 shadow-xl sm:h-48 sm:w-48">
                 <AvatarImage src="" alt="Profile photo" />
                 <AvatarFallback className="bg-muted">
-                  <User className="h-12 w-12 text-muted-foreground" />
+                  <User className="h-16 w-16 text-muted-foreground sm:h-20 sm:w-20" />
                 </AvatarFallback>
               </Avatar>
-              
-              <h1 className="text-4xl font-bold text-foreground sm:text-5xl">
-                About <span className="text-gradient">Me</span>
-              </h1>
             </div>
+              
+            <h1 className="animate-fade-up mb-12 text-center text-4xl font-bold text-foreground sm:text-5xl">
+              About <span className="text-gradient">Me</span>
+            </h1>
             
             <div className="animate-fade-up-delay-1 space-y-6 text-lg leading-relaxed text-muted-foreground">
               <p>
