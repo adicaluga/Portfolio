@@ -1,4 +1,6 @@
 import Layout from "@/components/Layout";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { User } from "lucide-react";
 
 const skills = [
   { category: "Frontend", items: ["React", "TypeScript", "Next.js", "Tailwind CSS"] },
@@ -12,9 +14,18 @@ const About = () => {
       <section className="py-24">
         <div className="container mx-auto px-6">
           <div className="mx-auto max-w-3xl">
-            <h1 className="animate-fade-up mb-12 text-4xl font-bold text-foreground sm:text-5xl">
-              About <span className="text-gradient">Me</span>
-            </h1>
+            <div className="animate-fade-up mb-12 flex flex-col items-center gap-8 sm:flex-row sm:items-start">
+              <Avatar className="h-32 w-32 border-2 border-primary/30 shadow-lg">
+                <AvatarImage src="" alt="Profile photo" />
+                <AvatarFallback className="bg-muted">
+                  <User className="h-12 w-12 text-muted-foreground" />
+                </AvatarFallback>
+              </Avatar>
+              
+              <h1 className="text-4xl font-bold text-foreground sm:text-5xl">
+                About <span className="text-gradient">Me</span>
+              </h1>
+            </div>
             
             <div className="animate-fade-up-delay-1 space-y-6 text-lg leading-relaxed text-muted-foreground">
               <p>
