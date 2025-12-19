@@ -4,18 +4,34 @@ interface ProjectCardProps {
   title: string;
   description: string;
   techStack: string[];
+  highlights?: string[];
   githubUrl?: string;
   liveUrl?: string;
 }
 
-const ProjectCard = ({ title, description, techStack, githubUrl, liveUrl }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  techStack,
+  highlights,
+  githubUrl,
+  liveUrl,
+}: ProjectCardProps) => {
   return (
     <article className="group relative overflow-hidden rounded-xl border border-border/50 bg-card p-6 transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
-      
+
       <div className="relative">
         <h3 className="mb-3 text-xl font-semibold text-foreground">{title}</h3>
         <p className="mb-4 text-sm leading-relaxed text-muted-foreground">{description}</p>
+
+        {highlights && (
+          <ul className="mb-4 space-y-2 text-sm text-muted-foreground">
+            {highlights.map((highlight) => (
+              <li key={highlight}>{highlight}</li>
+            ))}
+          </ul>
+        )}
         
         <div className="mb-4 flex flex-wrap gap-2">
           {techStack.map((tech) => (

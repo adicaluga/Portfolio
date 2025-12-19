@@ -1,16 +1,20 @@
-import { Mail, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Layout from "@/components/Layout";
 
 const contactInfo = [
-  { icon: Mail, label: "Email", value: "hello@developer.com", href: "mailto:hello@developer.com" },
-  { icon: MapPin, label: "Location", value: "San Francisco, CA", href: null },
+  {
+    icon: Mail,
+    label: "Email",
+    value: "adriancalugarescu@outlook.com",
+    href: "mailto:adriancalugarescu@outlook.com",
+  },
+  { icon: MapPin, label: "Location", value: "Guelph, ON, Canada", href: null },
 ];
 
 const socialLinks = [
-  { icon: Github, label: "GitHub", href: "https://github.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com" },
-  { icon: Twitter, label: "Twitter", href: "https://twitter.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/adicaluga" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/adrian-calugarescu-787b843a0/" },
 ];
 
 const Contact = () => {
@@ -50,7 +54,7 @@ const Contact = () => {
             
             <div className="animate-fade-up-delay-3 mb-12">
               <Button variant="hero" size="lg" asChild>
-                <a href="mailto:hello@developer.com">
+                <a href="mailto:adriancalugarescu@outlook.com">
                   <Mail className="mr-2 h-4 w-4" />
                   Send Me an Email
                 </a>

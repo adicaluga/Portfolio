@@ -1,9 +1,9 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:hello@example.com", label: "Email" },
+  { icon: Github, href: "https://github.com/adicaluga", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/adrian-calugarescu-787b843a0/", label: "LinkedIn" },
+  { icon: Mail, href: "mailto:adriancalugarescu@outlook.com", label: "Email" },
 ];
 
 const Footer = () => {
@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="border-t border-border/50 bg-background py-8">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-6 sm:flex-row">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Developer. Built with passion.
+          © {new Date().getFullYear()} Adrian Calugarescu. All rights reserved.
         </p>
         
         <div className="flex items-center gap-4">

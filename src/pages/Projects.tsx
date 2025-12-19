@@ -3,43 +3,26 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce solution with real-time inventory management, secure payments, and a responsive admin dashboard.",
-    techStack: ["React", "Node.js", "PostgreSQL", "Stripe"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+    title: "RainCheckr",
+    description: "Weather web application (Jan 2025 - Feb 2025) delivering real-time forecasts with location awareness.",
+    techStack: ["HTML", "CSS", "JavaScript", "OpenWeatherMap API", "Geolocation API"],
+    highlights: [
+      "Integrated OpenWeatherMap for real-time weather data across 50+ locations.",
+      "Implemented location-based detection and responsive UI updates.",
+      "Reduced network load by minimizing redundant API calls.",
+    ],
+    githubUrl: "https://github.com/adicaluga/RainCheckr/tree/main",
   },
   {
-    title: "Task Management App",
-    description: "A collaborative project management tool with drag-and-drop boards, real-time updates, and team workspaces.",
-    techStack: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    title: "Analytics Dashboard",
-    description: "A data visualization dashboard featuring interactive charts, custom reports, and automated insights.",
-    techStack: ["React", "D3.js", "Python", "FastAPI"],
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "Developer Portfolio",
-    description: "A modern, responsive portfolio website built with performance and accessibility in mind.",
-    techStack: ["React", "TypeScript", "Tailwind CSS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    title: "API Gateway",
-    description: "A microservices API gateway with rate limiting, authentication, and request routing.",
-    techStack: ["Node.js", "Redis", "Docker", "Kubernetes"],
-    githubUrl: "https://github.com",
-  },
-  {
-    title: "CLI Tool",
-    description: "A command-line interface for automating development workflows and code generation.",
-    techStack: ["Python", "Click", "Rich"],
-    githubUrl: "https://github.com",
+    title: "LandMarkr",
+    description: "Full-stack location-based app (Jul 2025 - Present) to discover nearby tourist attractions worldwide.",
+    techStack: ["React (Vite)", "Express.js", "Prisma", "PostgreSQL", "Google Places API"],
+    highlights: [
+      "Built a RESTful backend to proxy Google Place Photos and protect API keys.",
+      "Implemented city search and live geolocation using the browser Geolocation API.",
+      "Created a modular React UI with search, cards, and localStorage persistence.",
+    ],
+    githubUrl: "https://github.com/adicaluga/LandMarkr",
   },
 ];
 
@@ -50,10 +33,10 @@ const Projects = () => {
         <div className="container mx-auto px-6">
           <div className="mb-16 text-center">
             <h1 className="animate-fade-up mb-4 text-4xl font-bold text-foreground sm:text-5xl">
-              My <span className="text-gradient">Projects</span>
+              Personal <span className="text-gradient">Projects</span>
             </h1>
             <p className="animate-fade-up-delay-1 mx-auto max-w-xl text-lg text-muted-foreground">
-              A selection of projects I've built, from full-stack applications to developer tools.
+              A selection of projects from coursework and personal builds.
             </p>
           </div>
           
