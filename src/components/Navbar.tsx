@@ -17,7 +17,7 @@ const Navbar = () => {
           to="/" 
           className="font-mono text-lg font-medium text-foreground transition-colors hover:text-primary"
         >
-          adicaluga
+          Adrian Calugarescu
         </NavLink>
         
         <ul className="flex items-center gap-8">
